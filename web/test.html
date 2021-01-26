@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试提交</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        .tab {
+            height: 30px;
+            width: 200px;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        function pushdata() {
+            let datajsons = fetch('/v1/user/new', {
+                method: 'post',
+                body: JSON.stringify({
+                    username: "xiaomi",
+                    password: "cok774.."
+                })
+            })
+            // datajsons.then(res => )
+            // document.write("用户名: " + JSON.stringify(datajsons) + "\n" + "密码: " + JSON.stringify(datajsons) + typeof(datajsons))
+        }
+        function showStudent() {
+            $.ajax({
+                url : '/v1/user/new',
+                data : JSON.stringify({
+                    username: document.getElementById('username').value,
+                    password: document.getElementById('password').value
+                }),
+                type : "post",
+                dataType : "json",
+                beforeSend : function() {
+                    alert("发送前");
+                },
+                complete : function() {
+                    alert("完成");
+                },
+                success : function(data) {
+                    // for (let i = 0; i < data.length; i++) {
+                    //     document.write(data[i].username + data[i].password)
+                    // }
+                    // document.write(JSON.stringify(data.username))
+                    document.getElementById('username2').value = data.username
+                    document.getElementById('password2').value = data.password
+                },
+                error : function() {
+                    alert("请求失败");
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<a href="#"><span id="sl">小明</span></a>
+<input type="text" value="用户名" id="username" class="tab">
+<input type="text" value="密码" id="password" class="tab">
+<input type="button" value="提交" class="tab" onclick="showStudent()">
+<input type="text" value="用户名" id="username2" class="tab">
+<input type="text" value="用户名" id="password2" class="tab">
+
+</body>
+</html>

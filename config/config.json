@@ -1,0 +1,34 @@
+{
+  "database":{
+    "sqlite3":{
+      "file": "/Users/harder/GoLang_Project/Web_Project/网站登录注册案例/data/webdatas.db"
+    },
+    "redis": {
+      "ipaddress": "",
+      "port": "",
+      "userpassword": ""
+    },
+    "mysql": {
+      "version": "5.7",
+      "username": "",
+      "userpassword": "",
+      "ipaddress": "",
+      "port": ""
+    }
+  },
+  "macos": {
+    "projectpath": "/Users/harder/GoLang_Project/Web_Project/网站登录注册案例",
+    "path": "/Users/harder/GoLang_Project/Web_Project/网站登录注册案例/web"
+  },
+  "windows": {
+    "path": ""
+  },
+  "linux": {
+    "path": ""
+  },
+  "server": {
+    "IPAddress":"127.0.0.1",
+    "port":":8080"
+  },
+  "session_storage": "local"
+}

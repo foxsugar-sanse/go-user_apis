@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+    <script language="javascript" src="./js/pushdata.js"></script>
+</head>
+<body>
+<form action="">
+    <ul>
+        <li><label>用户名：<input type="text" name="username" id="username" required value="" class="ipt" /></label></li>
+        <li><label>密码：<input type="text" name="password" id="password" required value="" class="ipt" /></label></li>
+<!--        <li><label>请重复新密码：<input type="text" name="reNewPassword" id="reNewPassword" required value="" class="ipt" /></label></li>-->
+        <li><label><input onclick="ajax_fetch()"  value="确认提交" type="button" /></label></li>
+        <li><label><input onclick="fromPost('http://localhost:8080/v1/new',username)"  value="确认提交" type="button" /></label></li>
+        <li><label><button onclick="ajax_fetch()" value="提交"></button></label></li>
+    </ul>
+</form>
+
+</body>
+</html>

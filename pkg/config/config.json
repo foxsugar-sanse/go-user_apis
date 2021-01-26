@@ -1,0 +1,21 @@
+{
+  "database":{
+    "sqlite3":{
+      "file": "/Users/harder/GoLang_Project/Web_Project/网站登录注册案例/data/webdatas.db"
+    }
+  },
+  "macos": {
+    "projectpath": "/Users/harder/GoLang_Project/Web_Project/网站登录注册案例",
+    "path": "/Users/harder/GoLang_Project/Web_Project/网站登录注册案例/web"
+  },
+  "windows": {
+    "path": ""
+  },
+  "linux": {
+    "path": ""
+  },
+  "server": {
+    "IPAddress":"127.0.0.1",
+    "port":":8080"
+  }
+}
